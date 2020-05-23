@@ -2,9 +2,12 @@ import React from 'react' //rfc
 import Hero from '../components/Hero';
 import Banner from '../components/Banner';
 import {Link} from 'react-router-dom';
+import Services from '../components/Services';
 
 export default function Home() {
-    return <Hero>
+    return( 
+    <>
+    <Hero>
         <Banner title="Quartos de Luxo"
                 subtitle="Quartos de luxo a 400kz">
          <Link to='/rooms' className="btn-primary">
@@ -12,4 +15,7 @@ export default function Home() {
              </Link>               
         </Banner>
     </Hero>;
+    <Services />
+    </>
+);
 }
